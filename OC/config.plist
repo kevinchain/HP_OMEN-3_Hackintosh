@@ -20,7 +20,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-EC.aml</string>
+				<string>SSDT-EC-USBX.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -48,19 +48,19 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Brightness Key Hotpatch</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-BKey.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Add PNLF Device</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-PNLF.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Brightness Key Hotpatch</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-BKey.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -76,7 +76,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-DRP05.aml</string>
+				<string>SSDT-DRP07.aml</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -394,7 +394,7 @@
 			<key>RebaseRegions</key>
 			<false/>
 			<key>ResetHwSig</key>
-			<true/>
+			<false/>
 			<key>ResetLogoStatus</key>
 			<false/>
 		</dict>
@@ -734,7 +734,36 @@
 			<data></data>
 		</dict>
 		<key>Patch</key>
-		<array/>
+		<array>
+			<dict>
+				<key>Base</key>
+				<string>__ZN8AppleRTC18setupDateTimeAlarmEPK11RTCDateTime</string>
+				<key>Comment</key>
+				<string>Disable RTC wake scheduling</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data></data>
+				<key>Identifier</key>
+				<string>com.apple.driver.AppleRTC</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>19.0.0</string>
+				<key>Replace</key>
+				<data>ww==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+		</array>
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
@@ -849,7 +878,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>dart=0 darkwake=0 -wegnoegpu brcmfx-country=#a</string>
+				<string>slide=1 dart=0 -wegnoegpu brcmfx-country=#a</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>nvda_drv</key>

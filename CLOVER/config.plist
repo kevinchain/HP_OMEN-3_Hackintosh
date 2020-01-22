@@ -141,20 +141,20 @@
 		</dict>
 		<key>SortedOrder</key>
 		<array>
-			<string>SSDT-EC.aml</string>
+			<string>SSDT-EC-USBX.aml</string>
 			<string>SSDT-SBUS.aml</string>
 			<string>SSDT-GPRW.aml</string>
 			<string>SSDT-BAT0.aml</string>
 			<string>SSDT-PNLF.aml</string>
 			<string>SSDT-BKey.aml</string>
 			<string>SSDT-XCPM.aml</string>
-			<string>SSDT-DRP05.aml</string>
+			<string>SSDT-DRP07.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 darkwake=0 -wegnoegpu brcmfx-country=#a</string>
+		<string>dart=0 -wegnoegpu brcmfx-country=#a</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Legacy</key>
