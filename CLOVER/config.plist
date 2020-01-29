@@ -17,16 +17,6 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>change Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>R1BSVwI=</data>
-					<key>Replace</key>
-					<data>WFBSVwI=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change Method(SMRD,4,N) to XMRD</string>
 					<key>Disabled</key>
 					<false/>
@@ -143,7 +133,6 @@
 		<array>
 			<string>SSDT-EC-USBX.aml</string>
 			<string>SSDT-SBUS.aml</string>
-			<string>SSDT-GPRW.aml</string>
 			<string>SSDT-BAT0.aml</string>
 			<string>SSDT-PNLF.aml</string>
 			<string>SSDT-BKey.aml</string>
@@ -366,6 +355,8 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
+		<key>ROM</key>
+		<data>C6VGVuP8</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
