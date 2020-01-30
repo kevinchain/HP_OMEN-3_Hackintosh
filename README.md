@@ -1,7 +1,7 @@
 # HP_OMEN-3_Hackintosh
 ## Instruction 说明
-* 此EFI适用于暗影3标准版和电竞版，无论你是i5还是i7
-* 此EFI只提供CLOVER和OpenCore下的config.plist、电池补丁和USB定制文件等一些差异文件，因为其它部分与暗影精灵2Pro完全相同
+* 此EFI适用于暗影3标准版和电竞版（主板型号HP 838F）
+* 此EFI只提供CLOVER和OpenCore下的config.plist、电池补丁、USB定制文件等一些差异文件，因为其它部分与暗影精灵2Pro完全相同
 * 具体的运行状况见我的[暗影精灵2Pro黑苹果EFI](https://github.com/XStar-Dev/HP_OMEN-2Pro_Hackintosh)项目说明
 
 ## Issues 存在的问题
