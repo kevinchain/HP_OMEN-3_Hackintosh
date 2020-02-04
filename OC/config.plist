@@ -16,7 +16,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Fake EC Device for USB Power Management</string>
+				<string>Fake EC Device and Inject UPC for Apple Device Charge</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -56,7 +56,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Inject X86 CPU Power Management</string>
+				<string>Inject X86 for CPU Power Management</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -64,7 +64,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Disable Invalid SD Card Reader</string>
+				<string>Disable rarely used SD Card Reader</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -72,22 +72,7 @@
 			</dict>
 		</array>
 		<key>Block</key>
-		<array>
-			<dict>
-				<key>All</key>
-				<false/>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>OemTableId</key>
-				<data></data>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>RE1BUg==</data>
-			</dict>
-		</array>
+		<array/>
 		<key>Patch</key>
 		<array>
 			<dict>
@@ -815,9 +800,9 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Name</key>
-				<string>UEFI Shell</string>
+				<string>Clean NVRAM</string>
 				<key>Path</key>
-				<string>Shell.efi</string>
+				<string>CleanNvram.efi</string>
 			</dict>
 		</array>
 	</dict>
@@ -828,7 +813,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>slide=1 dart=0 -wegnoegpu brcmfx-country=#a</string>
+				<string>slide=1 -wegnoegpu brcmfx-country=#a</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>nvda_drv</key>
@@ -856,6 +841,8 @@
 		<dict/>
 		<key>Generic</key>
 		<dict>
+			<key>AdviseWindows</key>
+			<true/>
 			<key>MLB</key>
 			<string>C02836600CDJ1JHJC</string>
 			<key>SpoofVendor</key>
@@ -950,7 +937,7 @@
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
-			<false/>
+			<true/>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
 			<key>ProvideConsoleGop</key>
